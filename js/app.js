@@ -14,6 +14,7 @@ function runGame(userChoice) {
         case 'Carapuce_Bulbizarre':
         case 'Salamèche_Carapuce':
             loses += 1;
+            
             gameStatus.innerHTML = `Moi : ${userChoice} | Computer : ${OrdiChoice} -> Computer Wins`
             break;
         case 'Bulbizarre_Carapuce':
@@ -27,6 +28,7 @@ function runGame(userChoice) {
         case 'Salamèche_Salamèche':
                     
                     gameStatus.innerHTML = `Moi : ${userChoice} | Computer : ${OrdiChoice} -> égalité`
+                    
                     break;
     }
 
@@ -42,5 +44,6 @@ function runGame(userChoice) {
 }
 
 Bulbizarre.addEventListener('click', () => runGame("Bulbizarre"));
+
 Carapuce.addEventListener('click', () => runGame("Carapuce"));
 Salamèche.addEventListener('click', () => runGame("Salamèche"));

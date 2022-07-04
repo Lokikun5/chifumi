@@ -31,9 +31,32 @@ p{
 img{
     width: 35%;
 }
+
 .choix{
     display: flex;
     
+}
+#Bulbizarre :active{
+    background-color: rgba(0, 128, 0, 0.436);
+    border-radius: 80px;
+    padding: 10px;
+    border: 1px solid black;
+    transition: 200ms ease-in-out;
+    
+}
+#Carapuce :active {
+    background-color: rgba(0, 0, 255, 0.66);
+    border-radius: 80px;
+    padding: 10px;
+    border: 1px solid black;
+    transition: 200ms ease-in-out;
+}
+#Salamèche :active{
+    background-color: orange;
+    border-radius: 80px;
+    padding: 10px;
+    border: 1px solid black;
+    transition: 200ms ease-in-out;
 }
 .choix > div {
     display: inline-block;
@@ -43,5 +66,6 @@ img{
 .choix > div:hover{
     transform: scale(110%);
     cursor: pointer;
-    filter: brightness(1.50);
+    filter: brightness(1.25);
+    
 }
